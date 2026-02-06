@@ -68,7 +68,7 @@ models/final_subtask2a_model.pt
 
 ### Environment setup
 
-pip install torch transformers pandas scikit-learn scipy numpy
+pip install -r requirements.txt
 
 ### Training
 
@@ -78,9 +78,14 @@ python train_2a.py --train_file path/to/train_subtask2a.csv --output_model model
 
 python infer_2a.py --model_path models/final_subtask2a_model.pt --test_file path/to/subtask2a_forecasting_user_marker.csv --output_file pred_subtask2a.csv
 
+Use subtask2a_forecasting_user_marker.csv for inference.
+
+Predict only users with is_forecasting_user == True (one row per user).
+
 The output file follows the format:
 
 user_id,pred_state_change_valence,pred_state_change_arousal
+
 
 
 
