@@ -57,6 +57,13 @@ The package contains:
 - model.py – model architecture definition  
 - models/final_subtask2a_model.pt – trained model checkpoint  
 
+## Model weights
+Download the trained model from:
+https://drive.google.com/file/d/1eI-vg0JZ4UFtlwQzsPXFGBNgpgwr5QKO/view?usp=sharing
+
+Place the file at:
+models/final_subtask2a_model.pt
+
 ## 3. How to run the system
 
 ### Environment setup
@@ -74,3 +81,4 @@ python infer_2a.py --model_path models/final_subtask2a_model.pt --test_file path
 The output file follows the format:
 
 user_id,pred_state_change_valence,pred_state_change_arousal
+
